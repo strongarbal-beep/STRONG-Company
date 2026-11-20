@@ -1,9 +1,0 @@
-node_modules
-.next
-.git
-dev.log
-*.tmp
-.DS_Store
-npm-debug.log*
-pnpm-debug.log*
-data/store.backup.json
