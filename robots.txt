@@ -1,9 +1,0 @@
-User-Agent: *
-Allow: /ar/
-Allow: /ku/
-Allow: /en/
-Allow: /images/
-Disallow: /admin/
-Disallow: /api/admin/
-
-Sitemap: https://strongarbal-beep.github.io/STRONG-Company/sitemap.xml
