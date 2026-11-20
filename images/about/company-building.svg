@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0C4A6E" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="tower2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#78350F" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- City ground / road -->
+  <rect y="480" width="800" height="120" fill="#090D16"/>
+  <line x1="0" y1="480" x2="800" y2="480" stroke="#334155" stroke-width="2"/>
+
+  <!-- Modern Tower Left -->
+  <polygon points="120,480 120,180 280,120 280,480" fill="url(#glass)"/>
+  <polygon points="280,120 360,160 360,480 280,480" fill="#082F49"/>
+  <!-- Windows pattern Left -->
+  <g stroke="#E0F2FE" stroke-opacity="0.3" stroke-width="1.5">
+    <line x1="150" y1="200" x2="150" y2="480"/><line x1="180" y1="190" x2="180" y2="480"/>
+    <line x1="210" y1="180" x2="210" y2="480"/><line x1="240" y1="170" x2="240" y2="480"/>
+  </g>
+
+  <!-- Modern Headquarters Main Building -->
+  <polygon points="340,480 340,90 560,90 560,480" fill="#1E293B" stroke="#D4AF37" stroke-width="2"/>
+  <polygon points="360,480 360,110 540,110 540,480" fill="url(#glass)"/>
+
+  <!-- Architectural Crown / Signage -->
+  <rect x="340" y="60" width="220" height="30" fill="#0B192C" stroke="#D4AF37" stroke-width="1"/>
+  <text x="450" y="82" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="14" fill="#D4AF37" text-anchor="middle" letter-spacing="3">STRONG COMPANY HQ</text>
+
+  <!-- Windows Grid Center -->
+  <g stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1">
+    <line x1="360" y1="160" x2="540" y2="160"/><line x1="360" y1="210" x2="540" y2="210"/>
+    <line x1="360" y1="260" x2="540" y2="260"/><line x1="360" y1="310" x2="540" y2="310"/>
+    <line x1="360" y1="360" x2="540" y2="360"/><line x1="360" y1="410" x2="540" y2="410"/>
+    <line x1="405" y1="110" x2="405" y2="480"/><line x1="450" y1="110" x2="450" y2="480"/>
+    <line x1="495" y1="110" x2="495" y2="480"/>
+  </g>
+
+  <!-- Tower Right -->
+  <polygon points="540,480 540,220 680,180 680,480" fill="url(#tower2)"/>
+  
+  <!-- Location text overlay -->
+  <rect x="50" y="520" width="700" height="50" rx="8" fill="#0B192C" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="552" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-weight="600" font-size="15" fill="#E2E8F0" text-anchor="middle">
+    Erbil - 40 Meter St. | أربيل - شارع 40 متري | هەولێر - شەقامی 40 مەتری
+  </text>
+</svg>
