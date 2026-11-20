@@ -3,27 +3,1043 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>STRONG Company</title>
-  <link rel="canonical" href="ar/">
-  <noscript><meta http-equiv="refresh" content="0; url=ar/"></noscript>
+  <title>شركة سترونغ | STRONG Company — أربيل، العراق</title>
+  <meta name="description" content="الموقع الرسمي لشركة STRONG Company في أربيل. بإدارة المدير المفوض عادل عبد الرحمن كريم. توفير أفضل المنتجات والحلول التجارية بأعلى معايير الجودة والموثوقية.">
+  <meta name="theme-color" content="#020617">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="STRONG Company — أربيل، العراق">
+  <meta property="og:description" content="القوة والريادة في الحلول والمنتجات التجارية المتميزة">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZEdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRTVDMDZFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjRDRBRjM3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk5N0MyMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmx1ZUdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUUzQThBIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBCMTkyQyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBvbHlnb24gcG9pbnRzPSI1MCw1IDkyLDI3IDkyLDczIDUwLDk1IDgsNzMgOCwyNyIgZmlsbD0idXJsKCNibHVlR3JhZCkiIHN0cm9rZT0idXJsKCNnb2xkR3JhZCkiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxwYXRoIGQ9Ik02OCwzMiBMMzYsMzIgQzMxLDMyIDI4LDM1IDI4LDQwIEwyOCw0OCBDMjgsNTMgMzIsNTYgMzgsNTcgTDYyLDYwIEM2OCw2MSA3Miw2NSA3Miw3MCBMNzIsNzggQzcyLDgzIDY4LDg2IDYyLDg2IEwzMCw4NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkKSIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDE1IDU0LDIxIDUwLDI3IDQ2LDIxIiBmaWxsPSJ1cmwoI2dvbGRHcmFkKSIvPgo8L3N2Zz4K" type="image/svg+xml">
   <style>
-    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-           background: #020617; color: #e2e8f0; font-family: system-ui, Arial, sans-serif; }
-    a { color: #fbbf24; text-decoration: none; margin: 0 .6rem; font-weight: 700; }
-  </style>
-  <script>
-    (function () {
-      // Arabic is the default language; a saved language preference wins.
-      var target = 'ar/';
-      try {
-        var m = document.cookie.match(/(?:^|;\s*)strong_pref_lang=(ar|ku|en)/);
-        if (m) target = m[1] + '/';
-      } catch (e) {}
-      window.location.replace(target);
-    })();
-  </script>
+/* =========================================================
+   STRONG Company — single-page static site
+   Pure CSS, no build step. Works on GitHub Pages as-is.
+   ========================================================= */
+:root {
+  --bg: #020617;
+  --surface: #0f172a;
+  --surface-2: #0b1224;
+  --border: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --gold: #fbbf24;
+  --gold-d: #f59e0b;
+  --radius: 20px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 120px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, "Noto Naskh Arabic", Arial, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, h4, p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+[hidden] { display: none !important; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.gold { color: var(--gold); }
+.muted { color: var(--muted); }
+.mono { font-family: Consolas, "Courier New", monospace; }
+.ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+.small-text { font-size: .8rem; }
+
+/* ---------- Buttons / badges ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  padding: .9rem 1.8rem; border-radius: 14px; font-weight: 700; font-size: 1rem;
+  border: 1px solid transparent; cursor: pointer; transition: all .2s; font-family: inherit;
+}
+.btn-gold { background: linear-gradient(90deg, var(--gold-d), #d97706); color: #020617; box-shadow: 0 10px 30px rgba(245, 158, 11, .2); }
+.btn-gold:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.btn-dark { background: var(--surface); color: var(--text); border-color: #334155; }
+.btn-dark:hover { background: #1e293b; }
+.btn.block { width: 100%; }
+
+.badge {
+  display: inline-flex; align-items: center; gap: .5rem; padding: .3rem 1rem;
+  border-radius: 999px; background: rgba(245, 158, 11, .1);
+  border: 1px solid rgba(245, 158, 11, .3); color: var(--gold);
+  font-size: .8rem; font-weight: 700;
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); animation: pulse 1.8s infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+
+/* ---------- Header ---------- */
+.site-header { position: sticky; top: 0; z-index: 40; background: var(--surface); border-bottom: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0, 0, 0, .35); }
+.topbar { background: #020617; border-bottom: 1px solid var(--border); font-size: .78rem; padding: .45rem 0; }
+.topbar-inner, .topbar-left { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.topbar-left { justify-content: flex-start; gap: 1.5rem; }
+
+.nav { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { display: flex; align-items: center; gap: .8rem; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+.brand strong { font-size: 1.5rem; font-weight: 900; letter-spacing: -.5px; }
+.brand em { color: var(--gold); font-style: normal; font-weight: 400; font-size: 1.15rem; }
+.brand small { color: var(--muted); font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
+.brand.small strong { font-size: 1.3rem; }
+
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a { font-weight: 600; font-size: .95rem; padding: .4rem 0; border-bottom: 2px solid transparent; transition: .2s; }
+.nav-links a:hover { color: var(--gold); border-color: var(--gold); }
+
+.nav-tools { display: flex; align-items: center; gap: .6rem; }
+.lang-switch { display: flex; border: 1px solid #334155; border-radius: 12px; overflow: hidden; }
+.lang-switch button {
+  background: var(--surface-2); color: var(--text); border: 0; padding: .45rem .8rem;
+  font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; transition: .2s;
+}
+.lang-switch button:hover { background: #1e293b; }
+.lang-switch button.active { background: rgba(245, 158, 11, .15); color: var(--gold); }
+.menu-btn { display: none; background: transparent; color: var(--text); border: 0; font-size: 1.6rem; cursor: pointer; padding: .2rem .6rem; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; overflow: hidden; padding: 110px 0 90px;
+  background:
+    radial-gradient(ellipse 60% 70% at 85% 20%, rgba(14, 140, 233, .22), transparent 70%),
+    radial-gradient(ellipse 50% 60% at 70% 90%, rgba(212, 175, 55, .14), transparent 70%),
+    linear-gradient(160deg, #07111f, #0f1e36 55%, #030811);
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image:
+    linear-gradient(rgba(56, 189, 248, .07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, .07) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-inner { position: relative; max-width: 1200px; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.3; margin: 1.4rem 0 1.2rem; max-width: 820px; }
+.lead { font-size: clamp(1rem, 2vw, 1.25rem); color: #cbd5e1; max-width: 700px; margin-bottom: 2.2rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.pillars { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(30, 41, 59, .9); display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.4rem; max-width: 820px; }
+.pillar { display: flex; align-items: center; gap: .9rem; }
+.pillar-ico { width: 44px; height: 44px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); font-size: 1.2rem; }
+.pillar b { display: block; font-size: .9rem; }
+.pillar small { color: var(--muted); font-size: .75rem; }
+
+/* ---------- Sections ---------- */
+.section { padding: 90px 0; }
+.section-alt { background: var(--surface-2); border-block: 1px solid var(--border); }
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 2.5rem; }
+.section-head h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; margin: .8rem 0; }
+h2 { font-weight: 900; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 28px; padding: 2rem; box-shadow: 0 20px 50px rgba(0, 0, 0, .35); }
+.card:hover { border-color: rgba(245, 158, 11, .25); }
+
+.about-card { display: grid; grid-template-columns: 5fr 7fr; gap: 2.5rem; align-items: center; margin-bottom: 1.8rem; padding: 2.5rem; }
+.about-visual { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; padding: 2rem; border-radius: 20px; background: linear-gradient(160deg, #0b192c, #0f172a); border: 1px solid #334155; }
+.director { display: flex; align-items: center; gap: .9rem; width: 100%; padding: 1rem; border-radius: 16px; background: #020617; border: 1px solid var(--border); }
+.director small { display: block; color: var(--muted); font-size: .75rem; }
+.director b { display: block; font-size: .95rem; }
+.about-text h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin: .8rem 0 1rem; }
+.about-text p { color: #cbd5e1; }
+.address-box { display: flex; gap: .8rem; align-items: flex-start; margin-top: 1.4rem; padding: 1rem 1.2rem; border-radius: 16px; background: rgba(2, 6, 23, .6); border: 1px solid var(--border); }
+.address-box small { display: block; color: var(--muted); font-size: .75rem; font-weight: 700; }
+.address-box b { font-size: .92rem; }
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.values .card { padding: 2rem; }
+.values h3 { font-size: 1.25rem; margin: 1rem 0 .6rem; }
+.values p { color: var(--muted); font-size: .92rem; }
+.ico { display: flex; width: 56px; height: 56px; align-items: center; justify-content: center; border-radius: 16px; background: rgba(245, 158, 11, .1); border: 1px solid rgba(245, 158, 11, .3); font-size: 1.6rem; }
+
+/* ---------- Products ---------- */
+.pills { display: flex; gap: .6rem; overflow-x: auto; padding-bottom: .6rem; margin-bottom: 1.8rem; justify-content: center; flex-wrap: wrap; }
+.pill { padding: .6rem 1.3rem; border-radius: 12px; font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; white-space: nowrap; background: var(--surface); color: #cbd5e1; border: 1px solid var(--border); transition: .2s; }
+.pill:hover { background: #1e293b; }
+.pill.active { background: var(--gold-d); color: #020617; border-color: var(--gold-d); font-weight: 800; }
+
+.grid-products { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.8rem; }
+.product { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; transition: .3s; }
+.product:hover { border-color: rgba(245, 158, 11, .5); transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, .4); }
+.product-img { position: relative; aspect-ratio: 1 / 1; background: #020617; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
+.product-img img, .product-img svg { width: 100%; height: 100%; object-fit: contain; padding: 1rem; }
+.tag { position: absolute; top: 12px; inset-inline-start: 12px; padding: .2rem .8rem; border-radius: 999px; background: rgba(15, 23, 42, .92); border: 1px solid #334155; color: var(--gold); font-size: .72rem; font-weight: 700; }
+.sku { position: absolute; top: 12px; inset-inline-end: 12px; padding: .15rem .6rem; border-radius: 8px; background: rgba(2, 6, 23, .85); border: 1px solid var(--border); color: var(--muted); font: .7rem Consolas, monospace; direction: ltr; }
+.feat { position: absolute; bottom: 12px; inset-inline-start: 12px; padding: .1rem .7rem; border-radius: 999px; background: rgba(16, 185, 129, .18); border: 1px solid rgba(16, 185, 129, .4); color: #34d399; font-size: .7rem; font-weight: 700; }
+.product-body { padding: 1.4rem; display: flex; flex-direction: column; flex: 1; }
+.product-body h3 { font-size: 1.05rem; margin-bottom: .5rem; }
+.product-body p { color: var(--muted); font-size: .86rem; flex: 1; margin-bottom: 1.2rem; }
+.product-body .btn { padding: .65rem 1rem; font-size: .88rem; background: #1e293b; color: #e2e8f0; }
+.product-body .btn:hover { background: var(--gold-d); color: #020617; }
+.empty { text-align: center; padding: 3rem; color: var(--muted); border: 1px dashed var(--border); border-radius: 20px; grid-column: 1 / -1; }
+
+/* ---------- Contact ---------- */
+.contact-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 2rem; align-items: start; }
+.contact-info h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin: .8rem 0; }
+.info-row { display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; margin-top: 1rem; border-radius: 16px; background: rgba(2, 6, 23, .7); border: 1px solid var(--border); }
+.info-row small { display: block; color: var(--muted); font-size: .72rem; font-weight: 700; text-transform: uppercase; }
+.info-row b, .info-row a { font-size: .92rem; font-weight: 700; }
+.ico-sm { width: 44px; height: 44px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); }
+.contact-info .btn { margin-top: 1.4rem; }
+.contact-form-card h3 { font-size: 1.5rem; margin-bottom: .4rem; }
+.contact-form-card > p { margin-bottom: 1.5rem; font-size: .9rem; }
+form label { display: block; margin-bottom: 1.2rem; font-size: .78rem; font-weight: 700; color: #cbd5e1; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+input, textarea {
+  display: block; width: 100%; margin-top: .45rem; padding: .8rem 1rem; border-radius: 12px;
+  background: #020617; color: #fff; border: 1px solid var(--border); font: inherit; font-size: .92rem;
+}
+input::placeholder, textarea::placeholder { color: #64748b; }
+input:focus, textarea:focus { outline: 2px solid var(--gold-d); border-color: transparent; }
+textarea { resize: vertical; }
+.notice { padding: 1rem 1.2rem; border-radius: 14px; margin-bottom: 1.2rem; font-size: .88rem; font-weight: 600; }
+.notice.ok { background: rgba(16, 185, 129, .1); border: 1px solid rgba(16, 185, 129, .35); color: #34d399; }
+.notice.err { background: rgba(244, 63, 94, .1); border: 1px solid rgba(244, 63, 94, .35); color: #fb7185; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: #020617; border-top: 1px solid var(--border); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.4fr; gap: 2.5rem; padding-top: 3.5rem; padding-bottom: 3rem; }
+.site-footer h4 { font-size: 1rem; margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
+.site-footer p { font-size: .88rem; margin-top: .8rem; }
+.footer-links li { margin-bottom: .6rem; font-size: .9rem; color: var(--muted); }
+.footer-links a:hover { color: var(--gold); }
+.copyright { background: rgba(15, 23, 42, .9); border-top: 1px solid var(--border); padding: 1.2rem 20px; text-align: center; font-size: .78rem; color: #64748b; }
+
+/* ---------- Modal ---------- */
+.modal { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 1rem; background: rgba(2, 6, 23, .82); backdrop-filter: blur(4px); }
+.modal-box { position: relative; width: 100%; max-width: 760px; max-height: 92vh; overflow: auto; background: var(--surface); border: 1px solid #334155; border-radius: 26px; padding: 2rem; box-shadow: 0 30px 80px rgba(0, 0, 0, .6); }
+.modal-close { position: absolute; top: 14px; inset-inline-end: 14px; width: 38px; height: 38px; border-radius: 50%; border: 0; background: #1e293b; color: #cbd5e1; font-size: 1rem; cursor: pointer; }
+.modal-close:hover { background: #334155; color: #fff; }
+.modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; align-items: center; }
+.modal-img { aspect-ratio: 1; background: #020617; border: 1px solid var(--border); border-radius: 18px; }
+.modal-img img, .modal-img svg { width: 100%; height: 100%; object-fit: contain; padding: .8rem; }
+.modal-meta { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: .8rem; }
+.modal-meta span { padding: .15rem .7rem; border-radius: 8px; font-size: .75rem; font-weight: 700; background: rgba(245, 158, 11, .1); border: 1px solid rgba(245, 158, 11, .3); color: var(--gold); }
+.modal-meta span.code { background: #1e293b; border-color: #1e293b; color: var(--muted); font-family: Consolas, monospace; direction: ltr; }
+.modal h3 { font-size: 1.4rem; margin-bottom: .8rem; }
+.modal p { color: #cbd5e1; font-size: .9rem; margin-bottom: 1rem; }
+.specs { padding: .9rem 1rem; border-radius: 14px; background: #020617; border: 1px solid var(--border); font-size: .8rem; color: #cbd5e1; margin-bottom: 1.2rem; }
+.specs b { display: block; color: var(--gold); margin-bottom: .3rem; }
+.modal .btn-close { background: transparent; color: var(--muted); width: 100%; margin-top: .4rem; padding: .5rem; border: 0; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .nav-links { display: none; position: absolute; top: 100%; inset-inline: 0; flex-direction: column; gap: 0; background: #020617; border-bottom: 1px solid var(--border); padding: .6rem 20px 1rem; }
+  .nav-links.open { display: flex; }
+  .nav-links a { display: block; padding: .8rem .4rem; border-bottom: 1px solid var(--border); }
+  .menu-btn { display: block; }
+  .about-card, .contact-grid, .modal-grid { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .hide-sm { display: none; }
+}
+@media (max-width: 560px) {
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .hero { padding: 70px 0 60px; }
+  .section { padding: 60px 0; }
+  .card, .about-card { padding: 1.4rem; }
+  .brand small { display: none; }
+  .nav { height: 68px; }
+  .lang-switch button { padding: .4rem .55rem; font-size: .78rem; }
+}
+
+/* ---------- Product manager ---------- */
+.adm { max-width: 980px; }
+.adm h3 { margin-bottom: .8rem; }
+.adm-bar { display: flex; gap: .6rem; flex-wrap: wrap; margin: 1rem 0; }
+.adm .btn { padding: .6rem 1.1rem; font-size: .85rem; }
+.adm-row { display: flex; align-items: center; gap: .8rem; padding: .6rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: .5rem; background: #020617; }
+.adm-row img { width: 48px; height: 48px; object-fit: contain; border-radius: 8px; background: var(--surface); }
+.adm-row > span { flex: 1; font-size: .85rem; }
+.adm-row button { background: #1e293b; color: #e2e8f0; border: 0; border-radius: 8px; padding: .35rem .65rem; cursor: pointer; font: inherit; font-size: .8rem; }
+.adm-row button:hover { background: var(--gold-d); color: #020617; }
+.adm fieldset { border: 1px solid var(--border); border-radius: 12px; margin: 0 0 .8rem; padding: .6rem .8rem; }
+.adm legend { color: var(--gold); font-size: .78rem; font-weight: 700; padding: 0 .4rem; }
+.adm fieldset input, .adm fieldset textarea { margin-top: .4rem; }
+.adm select { display: block; width: 100%; margin-top: .45rem; padding: .8rem 1rem; border-radius: 12px; background: #020617; color: #fff; border: 1px solid var(--border); font: inherit; }
+.adm-top { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+.adm-prev { width: 140px; height: 140px; object-fit: contain; background: #020617; border: 1px dashed #334155; border-radius: 12px; margin: .5rem 0; }
+.adm-hint { font-size: .78rem; color: var(--muted); }
+.gear { background: none; border: 0; color: #475569; cursor: pointer; font-size: .95rem; margin-inline-end: .6rem; }
+.gear:hover { color: var(--gold); }
+@media (max-width: 700px) { .adm-top { grid-template-columns: 1fr; } .adm-row { flex-wrap: wrap; } }
+
+</style>
 </head>
-<body>
-  <p><a href="ar/">العربية</a> <a href="ku/">کوردی</a> <a href="en/">English</a></p>
+<body id="top">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-left">
+          <span class="gold">🛡 <span data-i18n="directorTitle">المدير المفوض</span>: <span data-i18n="directorName">عادل عبد الرحمن كريم</span></span>
+          <span class="muted hide-sm">📍 <span data-i18n="address">أربيل، شارع 40 متري، مقابل عمارة الأمير للأثاث.</span></span>
+        </div>
+        <a class="ltr gold mono" href="mailto:strongarbal@gmail.com">✉ strongarbal@gmail.com</a>
+      </div>
+    </div>
+
+    <nav class="container nav">
+      <a class="brand" href="#top">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZEdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRTVDMDZFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjRDRBRjM3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk5N0MyMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmx1ZUdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUUzQThBIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBCMTkyQyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBvbHlnb24gcG9pbnRzPSI1MCw1IDkyLDI3IDkyLDczIDUwLDk1IDgsNzMgOCwyNyIgZmlsbD0idXJsKCNibHVlR3JhZCkiIHN0cm9rZT0idXJsKCNnb2xkR3JhZCkiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxwYXRoIGQ9Ik02OCwzMiBMMzYsMzIgQzMxLDMyIDI4LDM1IDI4LDQwIEwyOCw0OCBDMjgsNTMgMzIsNTYgMzgsNTcgTDYyLDYwIEM2OCw2MSA3Miw2NSA3Miw3MCBMNzIsNzggQzcyLDgzIDY4LDg2IDYyLDg2IEwzMCw4NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkKSIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDE1IDU0LDIxIDUwLDI3IDQ2LDIxIiBmaWxsPSJ1cmwoI2dvbGRHcmFkKSIvPgo8L3N2Zz4K" alt="STRONG Company" width="46" height="46">
+        <span class="brand-text">
+          <strong>STRONG <em>Company</em></strong>
+          <small>Erbil • هەولێر • أربيل</small>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#top" data-i18n="navHome">الرئيسية</a></li>
+        <li><a href="#about" data-i18n="navAbout">من نحن</a></li>
+        <li><a href="#products" data-i18n="navProducts">منتجاتنا</a></li>
+        <li><a href="#contact" data-i18n="navContact">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="ar" class="active">العربية</button>
+          <button type="button" data-lang="ku">کوردی</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="badge"><i class="dot"></i> <span data-i18n="heroBadge">الشركة الرسمية الرائدة في أربيل</span></span>
+        <h1 data-i18n="heroTitle">القوة والريادة في الحلول والمنتجات التجارية المتميزة</h1>
+        <p class="lead" data-i18n="heroSubtitle">شريككم الاستراتيجي الموثوق في أربيل وكافة أنحاء العراق، نلتزم بأعلى معايير الجودة والأداء المهني.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#products" data-i18n="heroExplore">استكشف منتجاتنا</a>
+          <a class="btn btn-dark" href="#contact" data-i18n="heroContact">تواصل معنا الآن</a>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar"><span class="pillar-ico">🏢</span><div><b data-i18n="p1t">المقر الرئيسي في أربيل</b><small data-i18n="p1s">شارع 40 متري</small></div></div>
+          <div class="pillar"><span class="pillar-ico">🛡</span><div><b data-i18n="directorName">عادل عبد الرحمن كريم</b><small data-i18n="directorTitle">المدير المفوض</small></div></div>
+          <div class="pillar"><span class="pillar-ico">🏅</span><div><b data-i18n="p3t">الجودة والثقة</b><small data-i18n="p3s">معيار تجاري معتمد</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="card about-card">
+          <div class="about-visual">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZEdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRTVDMDZFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjRDRBRjM3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk5N0MyMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmx1ZUdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUUzQThBIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBCMTkyQyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBvbHlnb24gcG9pbnRzPSI1MCw1IDkyLDI3IDkyLDczIDUwLDk1IDgsNzMgOCwyNyIgZmlsbD0idXJsKCNibHVlR3JhZCkiIHN0cm9rZT0idXJsKCNnb2xkR3JhZCkiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxwYXRoIGQ9Ik02OCwzMiBMMzYsMzIgQzMxLDMyIDI4LDM1IDI4LDQwIEwyOCw0OCBDMjgsNTMgMzIsNTYgMzgsNTcgTDYyLDYwIEM2OCw2MSA3Miw2NSA3Miw3MCBMNzIsNzggQzcyLDgzIDY4LDg2IDYyLDg2IEwzMCw4NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkKSIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDE1IDU0LDIxIDUwLDI3IDQ2LDIxIiBmaWxsPSJ1cmwoI2dvbGRHcmFkKSIvPgo8L3N2Zz4K" alt="STRONG Company" width="140" height="140">
+            <div class="director">
+              <span class="pillar-ico">🛡</span>
+              <div>
+                <small data-i18n="directorTitle">المدير المفوض</small>
+                <b data-i18n="directorName">عادل عبد الرحمن كريم</b>
+                <small class="gold" data-i18n="directorRole">الإدارة التنفيذية العامة</small>
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <span class="badge" data-i18n="aboutBadge">من نحن</span>
+            <h2 data-i18n="aboutTitle">عن شركة سترونغ (STRONG Company)</h2>
+            <p data-i18n="aboutText">تعد شركة STRONG Company إحدى المؤسسات التجارية الرائدة في إقليم كردستان والعراق. نتخذ من مدينة أربيل مقراً رئيسياً لنا، حيث نعمل على تلبية متطلبات السوق من خلال توفير أفضل المنتجات والخدمات التجارية المعتمدة. نرتكز في عملنا على أسس متينة من الثقة والمصداقية والاحترافية التي تضمن تقديم حلول عملية ومتطورة تلبي تطلعات شركائنا وعملائنا الكرام.</p>
+            <div class="address-box">
+              <span>📍</span>
+              <div>
+                <small data-i18n="addressTitle">المقر الرئيسي والعنوان الرسمي</small>
+                <b data-i18n="address">أربيل، شارع 40 متري، مقابل عمارة الأمير للأثاث.</b>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3 values">
+          <article class="card">
+            <span class="ico">🎯</span>
+            <h3 data-i18n="visionTitle">رؤيتنا</h3>
+            <p data-i18n="visionText">أن نكون الخيار الأول والاسم الأكثر موثوقية وتميزاً في قطاع الأعمال والتجارة في العراق وإقليم كردستان، محققين نمواً مستداماً يرتكز على الجودة العالية والابتكار.</p>
+          </article>
+          <article class="card">
+            <span class="ico">🧭</span>
+            <h3 data-i18n="missionTitle">رسالتنا</h3>
+            <p data-i18n="missionText">توفير منتجات وحلول تجارية تفوق توقعات العملاء، مع الالتزام التام بمعايير الجودة الصارمة، وبناء علاقات استراتيجية طويلة الأمد تقوم على الشفافية والاحترام المتبادل.</p>
+          </article>
+          <article class="card">
+            <span class="ico">🏆</span>
+            <h3 data-i18n="valuesTitle">قيمنا المؤسسية</h3>
+            <p data-i18n="valuesText">الجودة والتميز • الأمانة والنزاهة • الموثوقية والالتزام • خدمة العميل أولاً • التطوير المستمر</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section id="products" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge" data-i18n="prodBadge">قائمة المنتجات</span>
+          <h2 data-i18n="prodTitle">منتجاتنا المعتمدة</h2>
+          <p class="muted" data-i18n="prodSubtitle">مجموعة متكاملة من المنتجات والحلول المصممة لتلبية تطلعات قطاع الأعمال بجودة لا تضاهى.</p>
+        </div>
+
+        <div class="pills" id="categoryPills"></div>
+        <div class="grid-products" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="card contact-info">
+          <span class="badge" data-i18n="contactBadge">اتصل بنا</span>
+          <h2 data-i18n="contactTitle">يسعدنا تواصلكم معنا</h2>
+          <p class="muted" data-i18n="contactSubtitle">فريقنا جاهز للإجابة على استفساراتكم وتلبية طلباتكم التجارية بكل احترافية وسرعة.</p>
+
+          <div class="info-row"><span class="ico-sm">📍</span><div><small data-i18n="officeAddress">العنوان الرسمي</small><b data-i18n="address">أربيل، شارع 40 متري، مقابل عمارة الأمير للأثاث.</b></div></div>
+          <div class="info-row"><span class="ico-sm">✉</span><div><small data-i18n="emailAddress">البريد الإلكتروني المباشر</small><a class="ltr gold mono" href="mailto:strongarbal@gmail.com">strongarbal@gmail.com</a></div></div>
+          <div class="info-row"><span class="ico-sm">🛡</span><div><small data-i18n="directorTitle">المدير المفوض</small><b data-i18n="directorName">عادل عبد الرحمن كريم</b></div></div>
+
+          <a class="btn btn-dark block" href="mailto:strongarbal@gmail.com?subject=Inquiry%20to%20STRONG%20Company" data-i18n="sendEmailDirectly">إرسال بريد إلكتروني مباشر</a>
+        </div>
+
+        <div class="card contact-form-card">
+          <h3 data-i18n="formTitle">نموذج التواصل السريع</h3>
+          <p class="muted" data-i18n="formIntro">يرجى تعبئة النموذج وسيقوم مسؤول المبيعات بالتواصل معكم مباشرة.</p>
+
+          <div id="formStatus" class="notice" hidden></div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <label><span data-i18n="nameLabel">الاسم الكامل</span> *
+                <input type="text" name="name" required data-i18n-placeholder="namePh" placeholder="أدخل اسمك الكريم...">
+              </label>
+              <label><span data-i18n="emailLabel">البريد الإلكتروني</span> *
+                <input type="email" name="email" dir="ltr" required placeholder="example@domain.com">
+              </label>
+            </div>
+            <label><span data-i18n="subjectLabel">موضوع الرسالة</span>
+              <input type="text" name="subject" data-i18n-placeholder="subjectPh" placeholder="استفسار عن المنتجات / شراكة تجارية...">
+            </label>
+            <label><span data-i18n="messageLabel">نص الرسالة أو الطلب</span> *
+              <textarea name="message" rows="5" required data-i18n-placeholder="messagePh" placeholder="اكتب تفاصيل استفسارك أو طلبك هنا..."></textarea>
+            </label>
+            <button type="submit" class="btn btn-gold block" data-i18n="submit">إرسال الرسالة الآن</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand small">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZEdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRTVDMDZFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjRDRBRjM3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk5N0MyMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmx1ZUdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMUUzQThBIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBCMTkyQyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBvbHlnb24gcG9pbnRzPSI1MCw1IDkyLDI3IDkyLDczIDUwLDk1IDgsNzMgOCwyNyIgZmlsbD0idXJsKCNibHVlR3JhZCkiIHN0cm9rZT0idXJsKCNnb2xkR3JhZCkiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxwYXRoIGQ9Ik02OCwzMiBMMzYsMzIgQzMxLDMyIDI4LDM1IDI4LDQwIEwyOCw0OCBDMjgsNTMgMzIsNTYgMzgsNTcgTDYyLDYwIEM2OCw2MSA3Miw2NSA3Miw3MCBMNzIsNzggQzcyLDgzIDY4LDg2IDYyLDg2IEwzMCw4NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkKSIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8cG9seWdvbiBwb2ludHM9IjUwLDE1IDU0LDIxIDUwLDI3IDQ2LDIxIiBmaWxsPSJ1cmwoI2dvbGRHcmFkKSIvPgo8L3N2Zz4K" alt="" width="40" height="40">
+          <strong>STRONG <em>Company</em></strong>
+        </div>
+        <p class="muted" data-i18n="footerTagline">STRONG Company — القوة، الثقة، والتميز التجاري في أربيل وكافة أرجاء العراق.</p>
+      </div>
+      <div>
+        <h4 data-i18n="quickLinks">روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="#top" data-i18n="navHome">الرئيسية</a></li>
+          <li><a href="#about" data-i18n="navAbout">من نحن</a></li>
+          <li><a href="#products" data-i18n="navProducts">منتجاتنا</a></li>
+          <li><a href="#contact" data-i18n="navContact">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="contactInfo">معلومات التواصل</h4>
+        <p class="muted" data-i18n="address">أربيل، شارع 40 متري، مقابل عمارة الأمير للأثاث.</p>
+        <p><a class="ltr gold mono" href="mailto:strongarbal@gmail.com">strongarbal@gmail.com</a></p>
+        <p class="muted small-text" data-i18n="erbil">أربيل - إقليم كردستان العراق</p>
+      </div>
+    </div>
+    <div class="copyright"><button type="button" class="gear" id="gear" title="Manage products" aria-label="Manage products">⚙</button>
+      <span><span data-i18n="rights">جميع الحقوق محفوظة لشركة STRONG Company ©</span> <span id="year">2026</span></span>
+    </div>
+  </footer>
+
+  <!-- ================= PRODUCT MODAL ================= -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <p style="text-align:center;padding:1rem;background:#0f172a;color:#fbbf24">
+      Please enable JavaScript to view the product catalog. / يرجى تفعيل جافاسكربت لعرض المنتجات.
+    </p>
+  </noscript>
+
+  <script id="products-data" type="application/json">[{"sku":"ST-A102","category":"cat-1","image":"","featured":true,"name":{"ar":"منتج سترونغ التجاري الفئة ألف ST-A102","ku":"بەرھەمی بازرگانی سترۆنگ زنجیرەی ئەلف ST-A102","en":"STRONG Commercial Unit Series Alpha ST-A102"},"short":{"ar":"تصميم متين ومعدل استهلاك اقتصادي يلائم المشاريع المتوسطة والكبيرة.","ku":"دیزاینێکی پتەو و گونجاو بۆ پڕۆژە مامناوەند و گەورەکان.","en":"Robust construction with optimal performance tailored for mid-to-large scale business projects."},"full":{"ar":"يوفر هذا الموديل أداءً متزناً وثباتاً عالياً بفضل مواده المتينة المصنعة وفق أرقى المواصفات. يمكن تخصيص متطلبات التوريد بحسب طلب العميل.","ku":"ئەم مۆدێلە کاراییەکی هاوسەنگ و جێگیر پێشکەش دەکات بەهۆی کەرەستە بەهێزەکانی کە بەپێی بەرزترین ستاندارد دروستکراون.","en":"Delivers balanced and reliable throughput thanks to resilient components manufactured according to rigorous specifications."},"specs":{"ar":"المواصفات: كفاءة استثنائية • سهولة الصيانة والتشغيل • دعم فني متواصل.","ku":"تایبەتمەندییەکان: کارایی بێوێنە • ئاسانی پاراستن و بەکارهێنان • پشتگیری تەکنیکی بەردەوام.","en":"Specifications: Exceptional efficiency • Low maintenance operation • Dedicated technical support."}},{"sku":"ST-A101","category":"cat-1","image":"","featured":true,"name":{"ar":"منتج سترونغ التجاري الفئة ألف ST-A101","ku":"بەرھەمی بازرگانی سترۆنگ زنجیرەی ئەلف ST-A101","en":"STRONG Commercial Unit Series Alpha ST-A101"},"short":{"ar":"منتج عالي الاعتمادية مصمم لتلبية المتطلبات التجارية المتقدمة بأعلى درجات الكفاءة.","ku":"بەرهەمێکی جێی متمانەی بەرزە کە بۆ جێبەجێکردنی پێداویستییە بازرگانییە پێشکەوتووەکان دروستکراوە.","en":"High-reliability commercial unit engineered to meet advanced commercial requirements with maximum efficiency."},"full":{"ar":"يمثل هذا المنتج أحد أبرز الخيارات التجارية المتاحة ضمن فئته، حيث يجمع بين المتانة العالية والتصميم العصري. تم اختباره لضمان الأداء المستمر في مختلف ظروف التشغيل، وهو متوفر للتوزيع المباشر من مقر الشركة في أربيل.","ku":"ئەم بەرهەمە یەکێکە لە دیارترین هەڵبژاردە بازرگانییەکان، کە تێکەڵەیەکە لە پتەوی بەرز و دیزاینی سەردەمیانە. تاقیکراوەتەوە بۆ دڵنیابوون لە کارکردنی بەردەوام لە هەموو بارودۆخێکدا، و بەردەستە بۆ دابەشکردنی ڕاستەوخۆ لە بنکەی سەرەکی هەولێر.","en":"This model represents a flagship commercial product offering durability and cutting-edge design. Rigorously tested for continuous operation, ready for direct distribution from our Erbil headquarters."},"specs":{"ar":"المواصفات: فئة صناعية/تجارية قياسية • متوافق مع معايير الجودة المعتمدة • ضمان موثوق من STRONG Company.","ku":"تایبەتمەندییەکان: ستانداردی پیشەسازی و بازرگانی پەسەندکراو • گونجاو لەگەڵ کوالێتی بەرز • گەرەنتی متمانەپێکراو لە کۆمپانیای سترۆنگ.","en":"Specifications: Certified commercial grade • Compliant with quality standards • Covered by STRONG Company warranty."}},{"sku":"ST-B201","category":"cat-2","image":"","featured":true,"name":{"ar":"معدة سترونغ المتقدمة موديل ST-B201","ku":"ئامێری پێشکەوتووی سترۆنگ مۆدێلی ST-B201","en":"STRONG Advanced Equipment ST-B201"},"short":{"ar":"معدة احترافية معتمدة للأعمال الثقيلة والمهام الشاقة مع عمر افتراضي طويل.","ku":"ئامێرێکی پیشەیی پەسەندکراو بۆ کارە قورسەکان بە تەمەنێکی کارکردنی درێژخایەن.","en":"Certified professional equipment designed for demanding workloads with extended lifespan."},"full":{"ar":"صممت هذه المعدة خصيصاً لتواكب تحديات العمل المستمر، مما يجعلها استثماراً حقيقياً وموثوقاً لجميع المؤسسات والشركات في أربيل والعراق.","ku":"ئەم ئامێرە بە تایبەتی دیزاین کراوە تا لەگەڵ سەختییەکانی کاری بەردەوام بگونجێت، ئەمەش دەیکاتە وەبەرهێنانێکی ڕاستەقینە بۆ کۆمپانیاکان.","en":"Engineered specifically for heavy duty and high-uptime environments, making it a sound investment for commercial enterprises."},"specs":{"ar":"المواصفات: هيكل مقوى • تقنية حماية متطورة • شهادة مطابقة الجودة.","ku":"تایبەتمەندییەکان: پێکهاتەی پتەوکراو • تەکنەلۆژیای پاراستنی پێشکەوتوو • بڕوانامەی هاوتایی کوالێتی.","en":"Specifications: Reinforced chassis • Built-in safety mechanisms • Certified compliance."}},{"sku":"ST-B202","category":"cat-2","image":"","featured":false,"name":{"ar":"معدة سترونغ الذكية موديل ST-B202","ku":"ئامێری زیرەکی سترۆنگ مۆدێلی ST-B202","en":"STRONG Precision Equipment ST-B202"},"short":{"ar":"تقنية ذكية تجمع بين سرعة الاستجابة والدقة العالية في الأداء اليومي.","ku":"تەکنەلۆژیای زیرەک کە خێرایی و وردبینی بەرز لە کارکردنی ڕۆژانەدا کۆدەکاتەوە.","en":"Smart technology merging high responsiveness with precision for daily commercial tasks."},"full":{"ar":"توفر دقة تشغيل متناهية في كافة المراحل وتساعد على رفع الإنتاجية وتقليل التكاليف التشغيلية على المدى الطويل.","ku":"وردبینییەکی بێوێنە لە هەموو قۆناغەکاندا دەبەخشێت و یارمەتیدەرە بۆ بەرزکردنەوەی بەرهەمهێنان و کەمکردنەوەی تێچوون لە درێژخایەندا.","en":"Offers pinpoint operational precision across all stages, driving workplace productivity and lowering lifecycle costs."},"specs":{"ar":"المواصفات: تحكم رقمي مرن • استهلاك طاقة مثالي • متانة معتمدة.","ku":"تایبەتمەندییەکان: کۆنترۆڵی دیجیتاڵی ئاسان • بەکارهێنانی وزەی گونجاو • پەسەندکراوی بەرگری.","en":"Specifications: Digital control interface • Optimized power draw • Heavy-duty reliability."}},{"sku":"ST-G301","category":"cat-3","image":"","featured":true,"name":{"ar":"نظام مستلزمات سترونغ الفئة ج ST-G301","ku":"سیستەمی پێداویستییەکانی سترۆنگ پۆلی جیم ST-G301","en":"STRONG Advanced Supply System ST-G301"},"short":{"ar":"حل شامل للمستلزمات النوعية التي تضمن استمرارية الأعمال دون انقطاع.","ku":"چارەسەرێکی گشتگیر بۆ پێداویستییە تایبەتەکان بۆ بەردەوامبوونی کار بەبێ پچڕان.","en":"Comprehensive specialized supply solution designed to ensure uninterrupted operational continuity."},"full":{"ar":"تمتاز مستلزمات الفئة الثالثة بجودتها التنافسية وتوفرها الدائم عبر قنوات الإمداد الخاصة بشركتنا، ما يوفر لعملائنا راحة البال والثقة الكاملة.","ku":"پێداویستییەکانی پۆلی سێیەم بە کوالێتی بەرز و بەردەستبوونی بەردەوام لە ڕێگەی هێڵەکانی دابینکردنی کۆمپانیاکەمان ناسراون، کە متمانەی تەواو دەبەخشنە کڕیاران.","en":"Category 3 supplies boast superior endurance and continuous availability via our dedicated supply pipelines, providing ultimate peace of mind."},"specs":{"ar":"المواصفات: مواد صديقة ومستدامة • تعبئة وتغليف معتمد • مطابقة للمواصفات الدولية.","ku":"تایبەتمەندییەکان: کەرەستەی بەردەوام • پاکێجکردنی پەسەندکراو • هاوتای ستانداردە نێودەوڵەتییەکان.","en":"Specifications: Sustainable materials • Certified protective packaging • Compliant with international standards."}},{"sku":"ST-G302","category":"cat-3","image":"","featured":false,"name":{"ar":"نظام مستلزمات سترونغ الفئة ج ST-G302","ku":"سیستەمی پێداویستییەکانی سترۆنگ پۆلی جیم ST-G302","en":"STRONG Advanced Supply System ST-G302"},"short":{"ar":"وحدات إمداد مرنة وسهلة التركيب والتوافق مع الأنظمة المتعددة.","ku":"یەکەکانی دابینکردنی نەرم و ئاسان لە بەکارهێنان و گونجاو لەگەڵ سیستەمە جۆراوجۆرەکان.","en":"Modular supply units offering straightforward integration and cross-system compatibility."},"full":{"ar":"خيار مثالي لترقية وتحديث التجهيزات القائمة مع ضمان أعلى درجات الكفاءة التكليفية والتشغيلية المعتمدة.","ku":"هەڵبژاردەیەکی نموونەییە بۆ نوێکردنەوەی پێداویستییە هەبووەکان لەگەڵ دڵنیایی لە کارایی بەرز.","en":"Ideal upgrade choice for existing setups, guaranteeing prime cost efficiency and verified reliability."},"specs":{"ar":"المواصفات: تركيب فوري • توافق قياسي واسع • فحص جودة صارم قبل التسليم.","ku":"تایبەتمەندییەکان: بەستنی خێرا • گونجاوی فراوان • پشکنینی توندی کوالێتی پێش ڕادەستکردن.","en":"Specifications: Rapid deployment • Wide compatibility • Stringent quality inspection prior to delivery."}}]</script>
+<script>
+const SRC_HTML = '<!doctype html>\n' + document.documentElement.outerHTML;
+/* =========================================================
+   STRONG Company — single-page site logic (no frameworks)
+   To edit content: change the data below, save, and re-upload.
+   ========================================================= */
+
+/* ---------- Settings you may change ---------- */
+const EMAIL = 'strongarbal@gmail.com';
+// Optional: paste a Formspree / Web3Forms endpoint URL here to receive
+// contact-form messages directly. If left empty, the form opens the
+// visitor's email app with the message pre-filled instead.
+const FORM_ENDPOINT = '';
+
+/* ---------- Languages ---------- */
+const LANGS = {
+  ar: { dir: 'rtl' },
+  ku: { dir: 'rtl' },
+  en: { dir: 'ltr' },
+};
+
+/* ---------- Translations ---------- */
+const T = {
+  ar: {
+    title: 'شركة سترونغ | STRONG Company — أربيل، العراق',
+    metaDesc: 'الموقع الرسمي لشركة STRONG Company في أربيل. بإدارة المدير المفوض عادل عبد الرحمن كريم. توفير أفضل المنتجات والحلول التجارية بأعلى معايير الجودة والموثوقية.',
+    navHome: 'الرئيسية', navAbout: 'من نحن', navProducts: 'منتجاتنا', navContact: 'اتصل بنا',
+    directorTitle: 'المدير المفوض',
+    directorName: 'عادل عبد الرحمن كريم',
+    directorRole: 'الإدارة التنفيذية العامة',
+    address: 'أربيل، شارع 40 متري، مقابل عمارة الأمير للأثاث.',
+    heroBadge: 'الشركة الرسمية الرائدة في أربيل',
+    heroTitle: 'القوة والريادة في الحلول والمنتجات التجارية المتميزة',
+    heroSubtitle: 'شريككم الاستراتيجي الموثوق في أربيل وكافة أنحاء العراق، نلتزم بأعلى معايير الجودة والأداء المهني.',
+    heroExplore: 'استكشف منتجاتنا', heroContact: 'تواصل معنا الآن',
+    p1t: 'المقر الرئيسي في أربيل', p1s: 'شارع 40 متري',
+    p3t: 'الجودة والثقة', p3s: 'معيار تجاري معتمد',
+    aboutBadge: 'من نحن',
+    aboutTitle: 'عن شركة سترونغ (STRONG Company)',
+    aboutText: 'تعد شركة STRONG Company إحدى المؤسسات التجارية الرائدة في إقليم كردستان والعراق. نتخذ من مدينة أربيل مقراً رئيسياً لنا، حيث نعمل على تلبية متطلبات السوق من خلال توفير أفضل المنتجات والخدمات التجارية المعتمدة. نرتكز في عملنا على أسس متينة من الثقة والمصداقية والاحترافية التي تضمن تقديم حلول عملية ومتطورة تلبي تطلعات شركائنا وعملائنا الكرام.',
+    addressTitle: 'المقر الرئيسي والعنوان الرسمي',
+    visionTitle: 'رؤيتنا',
+    visionText: 'أن نكون الخيار الأول والاسم الأكثر موثوقية وتميزاً في قطاع الأعمال والتجارة في العراق وإقليم كردستان، محققين نمواً مستداماً يرتكز على الجودة العالية والابتكار.',
+    missionTitle: 'رسالتنا',
+    missionText: 'توفير منتجات وحلول تجارية تفوق توقعات العملاء، مع الالتزام التام بمعايير الجودة الصارمة، وبناء علاقات استراتيجية طويلة الأمد تقوم على الشفافية والاحترام المتبادل.',
+    valuesTitle: 'قيمنا المؤسسية',
+    valuesText: 'الجودة والتميز • الأمانة والنزاهة • الموثوقية والالتزام • خدمة العميل أولاً • التطوير المستمر',
+    prodBadge: 'قائمة المنتجات',
+    prodTitle: 'منتجاتنا المعتمدة',
+    prodSubtitle: 'مجموعة متكاملة من المنتجات والحلول المصممة لتلبية تطلعات قطاع الأعمال بجودة لا تضاهى.',
+    allCategories: 'جميع الفئات', viewDetails: 'عرض التفاصيل',
+    inquire: 'طلب عرض سعر / استفسار', specs: 'المواصفات الفنية:',
+    close: 'إغلاق', featured: 'مميز', noProducts: 'لا توجد منتجات متطابقة حالياً.',
+    contactBadge: 'اتصل بنا',
+    contactTitle: 'يسعدنا تواصلكم معنا',
+    contactSubtitle: 'فريقنا جاهز للإجابة على استفساراتكم وتلبية طلباتكم التجارية بكل احترافية وسرعة.',
+    officeAddress: 'العنوان الرسمي', emailAddress: 'البريد الإلكتروني المباشر',
+    sendEmailDirectly: 'إرسال بريد إلكتروني مباشر',
+    formTitle: 'نموذج التواصل السريع',
+    formIntro: 'يرجى تعبئة النموذج وسيقوم مسؤول المبيعات بالتواصل معكم مباشرة.',
+    nameLabel: 'الاسم الكامل', namePh: 'أدخل اسمك الكريم...',
+    emailLabel: 'البريد الإلكتروني',
+    subjectLabel: 'موضوع الرسالة', subjectPh: 'استفسار عن المنتجات / شراكة تجارية...',
+    messageLabel: 'نص الرسالة أو الطلب', messagePh: 'اكتب تفاصيل استفسارك أو طلبك هنا...',
+    submit: 'إرسال الرسالة الآن',
+    success: 'تم إرسال رسالتكم بنجاح! سنقوم بالرد عليكم في أقرب وقت.',
+    mailOpened: 'تم فتح تطبيق البريد لديكم، يرجى الضغط على «إرسال» لإتمام الرسالة.',
+    error: 'عذراً، حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى أو مراسلتنا مباشرة.',
+    fillRequired: 'يرجى تعبئة الاسم والبريد الإلكتروني ونص الرسالة.',
+    footerTagline: 'STRONG Company — القوة، الثقة، والتميز التجاري في أربيل وكافة أرجاء العراق.',
+    quickLinks: 'روابط سريعة', contactInfo: 'معلومات التواصل',
+    rights: 'جميع الحقوق محفوظة لشركة STRONG Company ©',
+    erbil: 'أربيل - إقليم كردستان العراق',
+  },
+
+  ku: {
+    title: 'کۆمپانیای سترۆنگ | STRONG Company — هەولێر، عێراق',
+    metaDesc: 'ماڵپەڕی فەرمی کۆمپانیای STRONG لە هەولێر. بە سەرپەرشتی بەڕێوەبەری ڕێپێدراو عادل عەبدولڕەحمان کەریم. دابینکردنی باشترین بەرهەم و چارەسەری بازرگانی بە بەرزترین کوالێتی.',
+    navHome: 'سەرەکی', navAbout: 'دەربارەی ئێمە', navProducts: 'بەرھەمەکانمان', navContact: 'پەیوەندیمان پێوەبکە',
+    directorTitle: 'بەڕێوەبەری ڕێپێدراو',
+    directorName: 'عادل عەبدولڕەحمان کەریم',
+    directorRole: 'بەڕێوەبردنی گشتی جێبەجێکار',
+    address: 'هەولێر، شەقامی ٤٠ مەتری، بەرامبەر بینای کەلوپەلی ئەمیر.',
+    heroBadge: 'کۆمپانیای فەرمی پێشەنگ لە هەولێر',
+    heroTitle: 'هێز و پێشەنگی لە چارەسەر و بەرهەمە بازرگانییە نایابەکاندا',
+    heroSubtitle: 'هاوبەشی ستراتیژی جێی متمانەتان لە هەولێر و سەرانسەری عێراق، پابەندین بە بەرزترین ستانداردەکانی کوالێتی.',
+    heroExplore: 'بەرھەمەکانمان ببینە', heroContact: 'پەیوەندیمان پێوەبکە',
+    p1t: 'بنکەی سەرەکی لە هەولێر', p1s: 'شەقامی ٤٠ مەتری',
+    p3t: 'کوالێتی و متمانە', p3s: 'ستانداردی بازرگانی',
+    aboutBadge: 'دەربارەی ئێمە',
+    aboutTitle: 'دەربارەی کۆمپانیای سترۆنگ (STRONG Company)',
+    aboutText: 'کۆمپانیای STRONG Company یەکێکە لە دامەزراوە بازرگانییە پێشەنگەکان لە هەرێمی کوردستان و عێراق. شاری هەولێر بنکەی سەرەکی کارەکانمانە، و کاردەکەین بۆ دابینکردنی پێداویستییەکانی بازاڕ لە ڕێگەی باشترین بەرهەم و خزمەتگوزارییە بازرگانییە پەسەندکراوەکان. پشتبەست بە متمانە، دەستپاکی و کارامەیی پیشەیی هەنگاو دەنێین بۆ پێشکەشکردنی چارەسەری کرداری و پێشکەوتوو.',
+    addressTitle: 'بنکەی سەرەکی و ناونیشانی فەرمی',
+    visionTitle: 'دیدگای ئێمە',
+    visionText: 'ببینە یەکەمین هەڵبژاردە و جێی متمانەترین ناو لە کەرتی بازرگانی لە عێراق و هەرێمی کوردستان، بە بەدیهێنانی گەشەپێدانی بەردەوام کە پشتبەستە بە کوالێتی بەرز و پێشکەوتن.',
+    missionTitle: 'ئەرکی ئێمە',
+    missionText: 'دابینکردنی بەرهەم و چارەسەری بازرگانی کە لە سەرووی چاوەڕوانییەکانی کڕیاران بێت، لەگەڵ پابەندبوونی تەواو بە ستانداردەکانی کوالێتی و دروستکردنی پەیوەندی ستراتیژی درێژخایەن.',
+    valuesTitle: 'بەها دامەزراوەییەکانمان',
+    valuesText: 'کوالێتی و لێهاتوویی • دەستپاکی و ڕاستگۆیی • متمانە و پابەندبوون • خزمەتگوزاری شایستەی کڕیار • بەرەوپێشچوونی بەردەوام',
+    prodBadge: 'لیستی بەرھەمەکان',
+    prodTitle: 'بەرھەمە باوەڕپێکراوەکانمان',
+    prodSubtitle: 'کۆمەڵەیەکی هەمەچەشن لە بەرھەم و چارەسەرەکان کە بە بەرزترین کوالێتی بۆ دابینکردنی پێداویستییەکانی کەرتی بازرگانی دیزاین کراون.',
+    allCategories: 'هەموو بەشەکان', viewDetails: 'بینینی وردەکاری',
+    inquire: 'داواکردنی نرخ / پرسیارکردن', specs: 'تایبەتمەندییە تەکنیکییەکان:',
+    close: 'داخستن', featured: 'دیاریکراو', noProducts: 'لە ئێستادا هیچ بەرھەمێک بەردەست نییە بەم مەرجانە.',
+    contactBadge: 'پەیوەندیکردن',
+    contactTitle: 'خۆشحاڵ دەبین بە پەیوەندیکردنتان',
+    contactSubtitle: 'تیمی ئێمە ئامادەیە بە خێرایی و بە تەواوی پیشەیی وەڵامی پرسیارەکانتان بداتەوە.',
+    officeAddress: 'ناونیشانی فەرمی', emailAddress: 'ئیمەیڵی ڕاستەوخۆ',
+    sendEmailDirectly: 'ناردنی ئیمەیڵی ڕاستەوخۆ',
+    formTitle: 'فۆڕمی خێرای پەیوەندی',
+    formIntro: 'تکایە ئەم فۆڕمە پڕبکەرەوە و بەرپرسی پەیوەندییەکان ڕاستەوخۆ پەیوەندیت پێوەدەکات.',
+    nameLabel: 'ناوی تەواو', namePh: 'ناوی خۆت بنووسە...',
+    emailLabel: 'ئیمەیڵ',
+    subjectLabel: 'بابەتی پەیام', subjectPh: 'پرسیار دەربارەی بەرھەمەکان / هاوبەشی بازرگانی...',
+    messageLabel: 'دەقی پەیام یان داواکاری', messagePh: 'وردەکاری داواکارییەکەت لێرە بنووسە...',
+    submit: 'ناردنی پەیام',
+    success: 'پەیامەکەت بە سەرکەوتوویی نێردرا! بە زووترین کات وەڵامتان دەدەینەوە.',
+    mailOpened: 'ئەپی ئیمەیڵەکەت کرایەوە، تکایە دوگمەی ناردن دابگرە بۆ تەواوکردنی پەیامەکە.',
+    error: 'ببورە، هەڵەیەک ڕوویدا لە کاتی ناردنی پەیامەکەدا. تکایە دووبارە هەوڵبدەرەوە یان ڕاستەوخۆ ئیمەیڵ بنێرە.',
+    fillRequired: 'تکایە ناو و ئیمەیڵ و دەقی پەیامەکە پڕبکەرەوە.',
+    footerTagline: 'STRONG Company — هێز، متمانە، و لێهاتوویی بازرگانی لە هەولێر و سەرانسەری عێراق.',
+    quickLinks: 'بەستەرە خێراکان', contactInfo: 'زانیاری پەیوەندی',
+    rights: 'هەموو مافەکان پارێزراون بۆ کۆمپانیای STRONG Company ©',
+    erbil: 'هەولێر - هەرێمی کوردستانی عێراق',
+  },
+
+  en: {
+    title: 'STRONG Company — Premier Trading & Enterprise in Erbil, Iraq',
+    metaDesc: 'Official corporate website of STRONG Company in Erbil, Iraq. Led by Authorized Director Adil Abdulrahman Karim. Supplying prime commercial products and enterprise solutions with superior quality.',
+    navHome: 'Home', navAbout: 'About Us', navProducts: 'Our Products', navContact: 'Contact Us',
+    directorTitle: 'Authorized Director',
+    directorName: 'Adil Abdulrahman Karim',
+    directorRole: 'General Executive Management',
+    address: 'Erbil, 40 Meter Street, Opposite Al-Ameer Furniture Building.',
+    heroBadge: 'Official Premier Enterprise in Erbil',
+    heroTitle: 'Strength and Leadership in Premium Commercial Products',
+    heroSubtitle: 'Your trusted strategic partner in Erbil and across Iraq, committed to the highest standards of quality and performance.',
+    heroExplore: 'Explore Our Products', heroContact: 'Contact Us Now',
+    p1t: 'Erbil Headquarters', p1s: '40 Meter Street',
+    p3t: 'Quality & Trust', p3s: 'Commercial Standard',
+    aboutBadge: 'About Company',
+    aboutTitle: 'About STRONG Company',
+    aboutText: "STRONG Company is one of the premier commercial enterprises headquartered in Erbil, operating across the Kurdistan Region and Iraq. We are dedicated to fulfilling diverse market needs by delivering superior commercial products and services. Built on unwavering integrity, dependability, and professional excellence, we provide enduring solutions that exceed our partners' expectations.",
+    addressTitle: 'Headquarters & Official Address',
+    visionTitle: 'Our Vision',
+    visionText: 'To be the leading, most dependable, and distinguished name in business and commerce across Iraq and the Kurdistan Region, driving sustainable growth through excellence and innovation.',
+    missionTitle: 'Our Mission',
+    missionText: 'To deliver commercial products and solutions that surpass customer expectations, adhering to rigorous quality standards while forging enduring partnerships grounded in transparency and mutual respect.',
+    valuesTitle: 'Core Corporate Values',
+    valuesText: 'Quality & Excellence • Integrity & Trust • Commitment & Reliability • Customer Focus • Continuous Improvement',
+    prodBadge: 'Product Catalog',
+    prodTitle: 'Our Certified Products',
+    prodSubtitle: 'A comprehensive lineup of high-caliber products and commercial solutions engineered for unparalleled performance.',
+    allCategories: 'All Categories', viewDetails: 'View Details',
+    inquire: 'Request Quote / Inquiry', specs: 'Technical Specifications:',
+    close: 'Close', featured: 'Featured', noProducts: 'No products match your criteria at this moment.',
+    contactBadge: 'Contact Us',
+    contactTitle: 'We Look Forward to Hearing From You',
+    contactSubtitle: 'Our professional team is on standby to assist with your commercial inquiries and supply needs promptly.',
+    officeAddress: 'Official Address', emailAddress: 'Direct Email',
+    sendEmailDirectly: 'Send Direct Email',
+    formTitle: 'Fast Contact Form',
+    formIntro: 'Please complete the form below and our team will get in touch directly.',
+    nameLabel: 'Full Name', namePh: 'Enter your full name...',
+    emailLabel: 'Email Address',
+    subjectLabel: 'Subject', subjectPh: 'Product inquiry / Business collaboration...',
+    messageLabel: 'Message Details', messagePh: 'Write your message or inquiry here...',
+    submit: 'Send Message Now',
+    success: 'Your message has been sent successfully! We will get back to you shortly.',
+    mailOpened: 'Your email app has been opened. Please press "Send" there to finish the message.',
+    error: 'An error occurred while sending your message. Please try again or reach out to our email directly.',
+    fillRequired: 'Please fill in your name, email and message.',
+    footerTagline: 'STRONG Company — Strength, Trust, and Commercial Excellence in Erbil and across Iraq.',
+    quickLinks: 'Quick Links', contactInfo: 'Contact Details',
+    rights: 'All Rights Reserved to STRONG Company ©',
+    erbil: 'Erbil - Kurdistan Region, Iraq',
+  },
+};
+
+/* ---------- Categories ---------- */
+const CATEGORIES = [
+  { id: 'cat-1', name: { ar: 'المنتجات التجارية الفئة الأولى', ku: 'بەرھەمە بازرگانییەکان پۆلی یەکەم', en: 'Commercial Products Series 1' } },
+  { id: 'cat-2', name: { ar: 'المعدات والحلول الفئة الثانية', ku: 'ئامێر و چارەسەرەکان پۆلی دووەم', en: 'Equipment & Systems Series 2' } },
+  { id: 'cat-3', name: { ar: 'المستلزمات المتطورة الفئة الثالثة', ku: 'پێداویستییە پێشکەوتووەکان پۆلی سێیەم', en: 'Advanced Supplies Series 3' } },
+];
+
+/* ---------- Products ----------
+   To add a product: copy one block, change the fields, save.
+   To use a real photo: put the file in the "images" folder and set
+   image: 'images/my-photo.jpg'   (leave '' to show the generated icon). */
+/* Products live in the <script id="products-data"> JSON block in this file. */
+const BAKED = document.getElementById('products-data').textContent;
+function hash(s) { let h = 0; for (let k = 0; k < s.length; k++) h = (h * 31 + s.charCodeAt(k)) | 0; return h + '_' + s.length; }
+let PRODUCTS = JSON.parse(BAKED);
+try { const d = JSON.parse(localStorage.getItem('strong_draft') || 'null'); if (d && d.base === hash(BAKED)) PRODUCTS = d.data; } catch (e) {}
+
+
+/* =========================================================
+   Application code (no need to edit below)
+   ========================================================= */
+const CAT_COLORS = { 'cat-1': ['#0E8CE9', '#034375'], 'cat-2': ['#D4AF37', '#78350F'], 'cat-3': ['#10B981', '#064E3B'] };
+
+let lang = 'ar';
+let activeCat = 'all';
+
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function tr(key) { return (T[lang] && T[lang][key]) || T.ar[key] || ''; }
+function pick(obj) { return (obj && (obj[lang] || obj.en || obj.ar)) || ''; }
+
+function productVisual(p, alt) {
+  if (p.image) return `<img src="${esc(p.image)}" alt="${esc(alt)}" loading="lazy">`;
+  const c = CAT_COLORS[p.category] || CAT_COLORS['cat-1'];
+  return `<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(alt)}">
+    <rect width="600" height="600" fill="#0F172A"/>
+    <g stroke="#fff" stroke-opacity=".05"><line x1="0" y1="150" x2="600" y2="150"/><line x1="0" y1="300" x2="600" y2="300"/><line x1="0" y1="450" x2="600" y2="450"/><line x1="150" y1="0" x2="150" y2="600"/><line x1="300" y1="0" x2="300" y2="600"/><line x1="450" y1="0" x2="450" y2="600"/></g>
+    <g transform="translate(300 270)">
+      <polygon points="0,-100 120,-30 0,40 -120,-30" fill="${c[0]}" fill-opacity=".85"/>
+      <polygon points="-120,-30 0,40 0,160 -120,90" fill="${c[1]}"/>
+      <polygon points="0,40 120,-30 120,90 0,160" fill="${c[1]}" fill-opacity=".7"/>
+      <line x1="0" y1="-100" x2="0" y2="40" stroke="#fff" stroke-opacity=".3" stroke-width="1.5"/>
+      <circle cx="0" cy="-30" r="28" fill="#fff" fill-opacity=".15"/>
+      <text x="0" y="-24" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">STRONG</text>
+    </g>
+    <text x="300" y="520" font-family="Consolas, monospace" font-size="26" fill="#94A3B8" text-anchor="middle">${esc(p.sku)}</text>
+  </svg>`;
+}
+
+function categoryName(id) {
+  const c = CATEGORIES.find((x) => x.id === id);
+  return c ? pick(c.name) : id;
+}
+
+function renderPills() {
+  const wrap = $('#categoryPills');
+  const btn = (id, label, count) =>
+    `<button type="button" class="pill${activeCat === id ? ' active' : ''}" data-cat="${id}">${esc(label)} (${count})</button>`;
+  wrap.innerHTML =
+    btn('all', tr('allCategories'), PRODUCTS.length) +
+    CATEGORIES.map((c) => btn(c.id, pick(c.name), PRODUCTS.filter((p) => p.category === c.id).length)).join('');
+}
+
+function renderProducts() {
+  renderPills();
+  const list = PRODUCTS.filter((p) => activeCat === 'all' || p.category === activeCat);
+  const grid = $('#productGrid');
+  if (!list.length) {
+    grid.innerHTML = `<div class="empty">${esc(tr('noProducts'))}</div>`;
+    return;
+  }
+  grid.innerHTML = list.map((p) => {
+    const name = pick(p.name);
+    return `<article class="product">
+      <div class="product-img">
+        ${productVisual(p, name)}
+        <span class="tag">${esc(categoryName(p.category))}</span>
+        <span class="sku">${esc(p.sku)}</span>
+        ${p.featured ? `<span class="feat">${esc(tr('featured'))}</span>` : ''}
+      </div>
+      <div class="product-body">
+        <h3>${esc(name)}</h3>
+        <p>${esc(pick(p.short))}</p>
+        <button type="button" class="btn" data-view="${esc(p.sku)}">${esc(tr('viewDetails'))}</button>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+/* ---------- Modal ---------- */
+function openModal(sku) {
+  const p = PRODUCTS.find((x) => x.sku === sku);
+  if (!p) return;
+  const name = pick(p.name);
+  $('#modalBody').innerHTML = `
+    <div class="modal-grid">
+      <div class="modal-img">${productVisual(p, name)}</div>
+      <div>
+        <div class="modal-meta"><span>${esc(categoryName(p.category))}</span><span class="code">${esc(p.sku)}</span></div>
+        <h3>${esc(name)}</h3>
+        <p>${esc(pick(p.full) || pick(p.short))}</p>
+        ${pick(p.specs) ? `<div class="specs"><b>${esc(tr('specs'))}</b>${esc(pick(p.specs))}</div>` : ''}
+        <button type="button" class="btn btn-gold block" data-inquire="${esc(p.sku)}">✉ ${esc(tr('inquire'))}</button>
+        <button type="button" class="btn btn-close" data-close>${esc(tr('close'))}</button>
+      </div>
+    </div>`;
+  $('#modal').hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  $('#modal').hidden = true;
+  document.body.style.overflow = '';
+}
+
+/* ---------- Language ---------- */
+function applyLang(l) {
+  if (!LANGS[l]) l = 'ar';
+  lang = l;
+  try { localStorage.setItem('strong_lang', l); } catch (e) {}
+
+  const root = document.documentElement;
+  root.lang = l;
+  root.dir = LANGS[l].dir;
+
+  $$('[data-i18n]').forEach((el) => { const v = tr(el.dataset.i18n); if (v) el.textContent = v; });
+  $$('[data-i18n-placeholder]').forEach((el) => { const v = tr(el.dataset.i18nPlaceholder); if (v) el.placeholder = v; });
+  $$('.lang-switch button').forEach((b) => b.classList.toggle('active', b.dataset.lang === l));
+
+  document.title = tr('title');
+  const meta = $('meta[name="description"]');
+  if (meta) meta.setAttribute('content', tr('metaDesc'));
+
+  renderProducts();
+  if (!$('#modal').hidden) closeModal();
+}
+
+/* ---------- Contact form ---------- */
+function showStatus(kind, text) {
+  const box = $('#formStatus');
+  box.className = 'notice ' + kind;
+  box.textContent = text;
+  box.hidden = false;
+}
+
+async function submitForm(e) {
+  e.preventDefault();
+  const f = e.target;
+  const name = f.name.value.trim();
+  const email = f.email.value.trim();
+  const subject = f.subject.value.trim();
+  const message = f.message.value.trim();
+
+  if (!name || !email || !message || !f.email.checkValidity()) {
+    showStatus('err', tr('fillRequired'));
+    return;
+  }
+
+  if (FORM_ENDPOINT) {
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+      if (!res.ok) throw new Error('bad status');
+      showStatus('ok', tr('success'));
+      f.reset();
+    } catch (err) {
+      showStatus('err', tr('error'));
+    }
+    return;
+  }
+
+  const mailSubject = subject || 'Inquiry to STRONG Company';
+  const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+  showStatus('ok', tr('mailOpened'));
+  window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(body)}`;
+}
+
+/* ---------- Init ---------- */
+document.addEventListener('DOMContentLoaded', () => {
+  $('#year').textContent = new Date().getFullYear();
+
+  // language buttons
+  $$('.lang-switch button').forEach((b) => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+  // category pills + product buttons (event delegation)
+  $('#categoryPills').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-cat]');
+    if (!b) return;
+    activeCat = b.dataset.cat;
+    renderProducts();
+  });
+  $('#productGrid').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-view]');
+    if (b) openModal(b.dataset.view);
+  });
+
+  // modal
+  $('#modal').addEventListener('click', (e) => {
+    if (e.target.id === 'modal' || e.target.closest('[data-close]') || e.target.closest('#modalClose')) closeModal();
+    const inq = e.target.closest('[data-inquire]');
+    if (inq) {
+      const p = PRODUCTS.find((x) => x.sku === inq.dataset.inquire);
+      const label = p ? `${p.sku} - ${pick(p.name)}` : inq.dataset.inquire;
+      const f = $('#contactForm');
+      f.subject.value = `Inquiry regarding: ${label}`;
+      f.message.value = `I would like to inquire about specifications and pricing for: ${label}`;
+      closeModal();
+      $('#contact').scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  // mobile menu
+  const links = $('#navLinks');
+  $('#menuBtn').addEventListener('click', () => links.classList.toggle('open'));
+  links.addEventListener('click', (e) => { if (e.target.closest('a')) links.classList.remove('open'); });
+
+  // form
+  $('#contactForm').addEventListener('submit', submitForm);
+
+  // initial language: ?lang=xx  >  saved choice  >  Arabic
+  let initial = 'ar';
+  try {
+    const q = new URLSearchParams(location.search).get('lang');
+    initial = (q && LANGS[q] && q) || localStorage.getItem('strong_lang') || 'ar';
+  } catch (e) {}
+  applyLang(initial);
+});
+
+/* =========================================================
+   Product manager (open with the ⚙ button in the footer or #admin)
+   Changes are kept as a draft in THIS browser only. Press
+   "Download index.html" and upload that file to GitHub to publish.
+   ========================================================= */
+(function () {
+  const FIELDS = [['name', 'اسم المنتج / Product name', 0], ['short', 'وصف مختصر / Short description', 1], ['full', 'وصف كامل / Full description', 1], ['specs', 'المواصفات / Specifications', 1]];
+  const LG = ['ar', 'ku', 'en'];
+  let editing = null, img = '';
+
+  const box = document.createElement('div');
+  box.className = 'modal'; box.id = 'admin'; box.hidden = true;
+  const fields = FIELDS.map(([k, l, ta]) => `<fieldset><legend>${l}</legend>${LG.map((g) =>
+    `<${ta ? 'textarea rows="2"' : 'input'} data-f="${k}.${g}" placeholder="${g.toUpperCase()}" dir="${g === 'en' ? 'ltr' : 'rtl'}">${ta ? '</textarea>' : ''}`).join('')}</fieldset>`).join('');
+  box.innerHTML = `<div class="modal-box adm" dir="rtl">
+    <button type="button" class="modal-close" id="admClose" aria-label="Close">✕</button>
+    <h3>⚙ إدارة المنتجات</h3>
+    <p class="adm-hint">أضف المنتجات وارفع صورها، ثم اضغط «تنزيل index.html» وارفع الملف الجديد إلى GitHub ليظهر للجميع. التعديلات قبل ذلك تظهر في متصفحك فقط.</p>
+    <div class="adm-bar">
+      <button type="button" class="btn btn-gold" id="admNew">＋ منتج جديد</button>
+      <button type="button" class="btn btn-dark" id="admDl">⬇ تنزيل index.html</button>
+      <button type="button" class="btn btn-dark" id="admReset">↺ تجاهل التعديلات</button>
+    </div>
+    <div id="admMsg" class="notice" hidden></div>
+    <div id="admList"></div>
+    <form id="admForm" hidden>
+      <h3 id="admFormTitle"></h3>
+      <div class="adm-top">
+        <div>
+          <label>SKU * <input id="f_sku" dir="ltr"></label>
+          <label>الفئة / Category <select id="f_cat"></select></label>
+          <label style="display:flex;gap:.5rem;align-items:center"><input type="checkbox" id="f_feat" style="width:auto;margin:0"> منتج مميز / Featured</label>
+        </div>
+        <div>
+          <label>صورة المنتج / Product image <input type="file" id="f_file" accept="image/*"></label>
+          <img id="f_prev" class="adm-prev" alt="" hidden>
+          <button type="button" class="btn btn-dark" id="f_noimg" style="padding:.4rem .8rem;font-size:.8rem" hidden>إزالة الصورة</button>
+          <p class="adm-hint">تُضغط الصورة تلقائياً (حتى 1000px) لتبقى خفيفة.</p>
+        </div>
+      </div>
+      ${fields}
+      <div class="adm-bar">
+        <button type="submit" class="btn btn-gold">حفظ المنتج</button>
+        <button type="button" class="btn btn-dark" id="admCancel">إلغاء</button>
+      </div>
+    </form>
+  </div>`;
+  document.body.appendChild(box);
+
+  const q = (s) => box.querySelector(s);
+  const form = q('#admForm');
+  q('#f_cat').innerHTML = CATEGORIES.map((c) => `<option value="${c.id}">${esc(c.name.ar)}</option>`).join('');
+
+  function msg(kind, text) { const m = q('#admMsg'); m.className = 'notice ' + kind; m.textContent = text; m.hidden = false; }
+  function persist() {
+    try { localStorage.setItem('strong_draft', JSON.stringify({ base: hash(BAKED), data: PRODUCTS })); }
+    catch (e) { msg('err', 'مساحة التخزين ممتلئة — نزّل الملف الآن ثم تابع.'); }
+    renderProducts(); list();
+  }
+  function list() {
+    q('#admList').innerHTML = PRODUCTS.map((p, i) => `<div class="adm-row">
+      ${p.image ? `<img src="${esc(p.image)}" alt="">` : '<span style="flex:none;width:48px;text-align:center">—</span>'}
+      <span><b dir="ltr">${esc(p.sku)}</b> · ${esc(pick(p.name))}</span>
+      <button type="button" data-a="up" data-i="${i}">▲</button><button type="button" data-a="dn" data-i="${i}">▼</button>
+      <button type="button" data-a="ed" data-i="${i}">تعديل</button><button type="button" data-a="del" data-i="${i}">حذف</button></div>`).join('') || '<p class="adm-hint">لا توجد منتجات.</p>';
+  }
+  function setPrev() { q('#f_prev').hidden = q('#f_noimg').hidden = !img; if (img) q('#f_prev').src = img; }
+  function edit(i) {
+    editing = i; const p = i == null ? {} : PRODUCTS[i]; img = p.image || '';
+    q('#admFormTitle').textContent = i == null ? 'منتج جديد' : 'تعديل: ' + p.sku;
+    q('#f_sku').value = p.sku || ''; q('#f_cat').value = p.category || CATEGORIES[0].id; q('#f_feat').checked = !!p.featured; q('#f_file').value = '';
+    form.querySelectorAll('[data-f]').forEach((el) => { const [k, g] = el.dataset.f.split('.'); el.value = (p[k] && p[k][g]) || ''; });
+    setPrev(); form.hidden = false; form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  function compress(file) {
+    return new Promise((ok, no) => {
+      const fr = new FileReader();
+      fr.onload = () => {
+        const im = new Image();
+        im.onload = () => {
+          const s = Math.min(1, 1000 / Math.max(im.width, im.height)), c = document.createElement('canvas');
+          c.width = Math.round(im.width * s); c.height = Math.round(im.height * s);
+          c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+          let u = c.toDataURL('image/webp', .85);
+          if (u.indexOf('image/webp') < 0) u = c.toDataURL('image/jpeg', .85);
+          ok(u);
+        };
+        im.onerror = no; im.src = fr.result;
+      };
+      fr.onerror = no; fr.readAsDataURL(file);
+    });
+  }
+  function exportHtml() {
+    const json = JSON.stringify(PRODUCTS).replace(/</g, '\\u003c');
+    const re = new RegExp('(<scr' + 'ipt id="products-data"[^>]*>)[\\s\\S]*?(</scr' + 'ipt>)');
+    const out = SRC_HTML.replace(re, (m, a, b) => a + json + b);
+    const url = URL.createObjectURL(new Blob([out], { type: 'text/html;charset=utf-8' }));
+    const a = document.createElement('a'); a.href = url; a.download = 'index.html'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    msg('ok', 'تم تنزيل index.html — ارفعه إلى مستودع GitHub مكان الملف القديم.');
+  }
+  function open() { box.hidden = false; document.body.style.overflow = 'hidden'; list(); }
+  function close() { box.hidden = true; form.hidden = true; document.body.style.overflow = ''; if (location.hash === '#admin') history.replaceState(null, '', location.pathname + location.search); }
+
+  q('#f_file').addEventListener('change', async (e) => {
+    const f = e.target.files[0]; if (!f) return;
+    try { img = await compress(f); setPrev(); } catch (err) { msg('err', 'تعذّر قراءة الصورة، جرّب صورة أخرى.'); }
+  });
+  q('#f_noimg').addEventListener('click', () => { img = ''; q('#f_file').value = ''; setPrev(); });
+  q('#admNew').addEventListener('click', () => edit(null));
+  q('#admCancel').addEventListener('click', () => { form.hidden = true; });
+  q('#admDl').addEventListener('click', exportHtml);
+  q('#admReset').addEventListener('click', () => {
+    if (!confirm('تجاهل كل التعديلات غير المنشورة والعودة إلى النسخة الحالية من الملف؟')) return;
+    try { localStorage.removeItem('strong_draft'); } catch (e) {}
+    PRODUCTS = JSON.parse(BAKED); form.hidden = true; renderProducts(); list();
+  });
+  q('#admList').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-a]'); if (!b) return;
+    const i = +b.dataset.i, a = b.dataset.a;
+    if (a === 'ed') return edit(i);
+    if (a === 'del') { if (confirm('حذف هذا المنتج؟')) { PRODUCTS.splice(i, 1); persist(); } return; }
+    const j = a === 'up' ? i - 1 : i + 1;
+    if (j >= 0 && j < PRODUCTS.length) { [PRODUCTS[i], PRODUCTS[j]] = [PRODUCTS[j], PRODUCTS[i]]; persist(); }
+  });
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const sku = q('#f_sku').value.trim();
+    if (!sku) return msg('err', 'يرجى إدخال رمز المنتج (SKU).');
+    if (PRODUCTS.some((p, i) => p.sku === sku && i !== editing)) return msg('err', 'رمز المنتج مستخدم لمنتج آخر.');
+    const p = editing == null ? {} : Object.assign({}, PRODUCTS[editing]);
+    p.sku = sku; p.category = q('#f_cat').value; p.featured = q('#f_feat').checked; p.image = img;
+    form.querySelectorAll('[data-f]').forEach((el) => { const [k, g] = el.dataset.f.split('.'); (p[k] = p[k] || {})[g] = el.value.trim(); });
+    if (!LG.some((g) => p.name[g])) return msg('err', 'يرجى إدخال اسم المنتج بلغة واحدة على الأقل.');
+    if (editing == null) PRODUCTS.push(p); else PRODUCTS[editing] = p;
+    form.hidden = true; q('#admMsg').hidden = true; persist();
+  });
+  q('#admClose').addEventListener('click', close);
+  box.addEventListener('click', (e) => { if (e.target === box) close(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !box.hidden) close(); });
+  const gear = document.getElementById('gear'); if (gear) gear.addEventListener('click', open);
+  window.addEventListener('hashchange', () => { if (location.hash === '#admin') open(); });
+  if (location.hash === '#admin') open();
+})();
+
+</script>
 </body>
 </html>
